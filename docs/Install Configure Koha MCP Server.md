@@ -114,7 +114,7 @@ To serve it over **Server-Sent Events (SSE)/HTTP** (e.g. for n8n), change the la
 mcp.run()                                  # stdio (default)
 # mcp.run(transport="sse", host="0.0.0.0", port=8000)   # SSE/HTTP
 ```
-## 11. Tools exposed
+## Tools exposed
 
 | Tool                    | Description                                           |
 |-------------------------|-------------------------------------------------------|
