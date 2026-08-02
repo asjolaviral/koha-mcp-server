@@ -7,7 +7,7 @@ to the Koha library system through its REST API.**
 
 </div>
 
-Connect Claude Desktop, **opencode**, **n8n** or any MCP-capable client to your
+Connect Claude Desktop, opencode, n8n or any MCP-capable client to your
 Koha instance and let it search the catalogue, catalog records, issue, renew
 and return items, and manage holds — using plain language.
 
