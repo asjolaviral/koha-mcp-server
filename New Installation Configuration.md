@@ -24,7 +24,26 @@
    curl -s -o /dev/null -w "%{http_code}\n" http://localhost/api/v1/
    # -> 200
    ```
-   
+
+## Get an OAuth2 API key
+
+The REST API authenticates with **OAuth2 `client_credentials`**. Create an API
+key through the staff client:
+
+> **Patrons** → your account → **More** → Manage API Keys → **Generate a new client id/key pair**
+
+You get a `client_id` and a one-time plain-text `client_secret`. Save them immediately — the secret is stored hashed and cannot be retrieved again.
+
+To verify the key works:
+
+```bash
+curl -X POST http://<koha-host>/api/v1/oauth/token \
+  -d "grant_type=client_credentials" \
+  -d "client_id=<CLIENT_ID>" \
+  -d "client_secret=<CLIENT_SECRET>"
+# -> {"access_token":"...","expires_in":3600,"token_type":"Bearer"}
+```   
+
 # Prerequisite
 - A working **Koha instance** with the REST API enabled.
 - **Root/sudo** access on the Koha host.
