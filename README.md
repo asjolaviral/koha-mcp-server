@@ -30,6 +30,12 @@ and return items, and manage holds — using plain language.
 | [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Errors you may hit and their fixes |
 | [test_client.py](test_client.py) | Self-test script |
 
+## 🔧 Requirements
+
+- **Koha** with the REST API enabled and an OAuth2 API key (client_id/secret)
+- Python 3.12+ (the server) and Perl (only for the optional return helper)
+- The server should run **on the same host as Koha** (returns use a local helper)
+
 ## 🚀 Quick start
 
 ```bash
@@ -47,12 +53,6 @@ nano config.json              # fill in your Koha credentials
 
 Search / catalogue, cataloguing, circulation, holds, patrons and libraries —
 24 tools in total. See [INSTALLATION.md](INSTALLATION.md#tools) for the full list.
-
-## 🔧 Requirements
-
-- **Koha** with the REST API enabled and an OAuth2 API key (client_id/secret)
-- Python 3.12+ (the server) and Perl (only for the optional return helper)
-- The server should run **on the same host as Koha** (returns use a local helper)
 
 ## 🧩 How it works
 
