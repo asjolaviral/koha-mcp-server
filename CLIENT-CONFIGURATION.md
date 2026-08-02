@@ -89,7 +89,7 @@ Example prompts:
 - *Issue item 4 to patron 1.*
 - *Renew the checkout for that item.*
 - *Return the item with barcode TEST-0001.*
-- *Add a new book titled "Machine Learning" by A. Gupta, ISBN 978-1234567890.*
+- *Add a new book titled "The Master of Gujarat" by K. Munshi, ISBN 9788172760595.*
 
 ---
 
