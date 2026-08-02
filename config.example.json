@@ -1,0 +1,9 @@
+{
+  "base_url": "http://YOUR-KOHA-HOST-OR-IP",
+  "client_id": "YOUR-OAUTH2-CLIENT-ID",
+  "client_secret": "YOUR-OAUTH2-CLIENT-SECRET",
+  "instance": "library",
+  "branchcode": "YOUR-DEFAULT-BRANCHCODE",
+  "koha_user": "library-koha",
+  "return_helper": "/usr/local/lib/koha-mcp/scripts/koha_return.pl"
+}
