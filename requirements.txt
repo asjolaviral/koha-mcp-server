@@ -2,3 +2,6 @@ mcp>=1.2.0
 httpx>=0.27.0
 httpx
 fastmcp
+mcp
+requests
+python-dotenv
