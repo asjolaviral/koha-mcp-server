@@ -15,7 +15,7 @@ and return items, and manage holds — using plain language.
 
 - 🔍 **Catalogue search** — substring search over title / author / ISBN / publisher / ...
 - 🛠 **Cataloguing** — create, update and delete biblios (MARC-in-JSON) and items
-- 🔄 **Circulation** — Issue (checkout), **Renew**, and **Return (checkin)**
+- 🔄 **Circulation** — Issue (checkout), Renew, and Return (checkin)
 - 📌 **Holds** — place, list and cancel holds
 - 👤 **Patrons** — lookup and search borrowers
 - 🏫 **Libraries** — list branches
