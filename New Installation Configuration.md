@@ -160,3 +160,43 @@ To serve it over **Server-Sent Events (SSE)/HTTP** (e.g. for n8n), change the la
 mcp.run()                                  # stdio (default)
 # mcp.run(transport="sse", host="0.0.0.0", port=8000)   # SSE/HTTP
 ```
+## 11. Tools exposed
+
+| Tool                    | Description                                           |
+|-------------------------|-------------------------------------------------------|
+| `search_catalogue`      | Substring search of biblios (field + term)            |
+| `search_catalogue_raw`  | Search with a raw q-filter JSON                       |
+| `get_biblio`            | Full biblio details                                   |
+| `get_biblio_items`      | Item copies of a biblio                               |
+| `get_item` / `list_items` | Single item / all items                             |
+| `get_public_biblio`     | Public (anonymous) MARC record of a biblio            |
+| `create_biblio`         | Add biblio from MARC-in-JSON                          |
+| `create_biblio_simple`  | Add biblio from plain fields (title/author/isbn/...)  |
+| `update_biblio` / `delete_biblio` | Edit / remove a biblio                      |
+| `create_item` / `update_item` | Add / edit an item (copy)                      |
+| `checkout_item`         | Issue an item to a patron                             |
+| `renew_checkout`        | Renew a checkout                                      |
+| `return_item`           | Return (checkin) an item by barcode                   |
+| `list_patron_checkouts` / `list_checkouts` | List loans                      |
+| `place_hold` / `list_patron_holds` / `cancel_hold` | Hold management      |
+| `get_patron` / `search_patrons` | Patron lookup                                  |
+| `list_libraries`        | Library branches                                      |
+
+
+
+# Connect your client
+
+- **opencode** → see [CLIENT-CONFIGURATION.md](CLIENT-CONFIGURATION.md#opencode)
+- **Claude Desktop** → see [CLIENT-CONFIGURATION.md](CLIENT-CONFIGURATION.md#claude-desktop)
+- **n8n** → see [CLIENT-CONFIGURATION.md](CLIENT-CONFIGURATION.md#n8n)
+
+# Known limitations
+
+- The `q` filter on `/biblios` and `/patrons` performs **DB-level filtering**
+  (substring `LIKE`), not full-text/Zebra search. For wide searches prefer
+  field-specific terms (e.g. `title`, `author`).
+- `barcode` cannot be changed on an item through the REST API once set
+  (`Properties not allowed: barcode`).
+- Duplicate-record protection is active: creating a biblio whose ISBN already
+  exists returns `Duplicate biblio <id>`.
+- The OAuth2 access token is cached and refreshed automatically (1 h validity).
