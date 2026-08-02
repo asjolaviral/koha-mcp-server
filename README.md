@@ -70,12 +70,6 @@ The Koha REST API has **no checkin/return endpoint**, so returns go through
 Koha's internal circulation module via a small, tightly scoped helper script.
 Everything else is pure REST.
 
-## 🤝 Contributing
-
-Pull requests are welcome. Please keep the code portable (no machine-specific
-credentials or paths) and add a note in the relevant doc if you change setup
-steps.
-
 ## 📄 License
 
 [MIT](LICENSE)
