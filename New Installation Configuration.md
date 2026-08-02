@@ -52,3 +52,9 @@ curl -X POST http://<koha-host>/api/v1/oauth/token \
   sudo apt update
   sudo apt install -y python3 python3-venv
   ```
+# Clone the repository
+
+```bash
+git clone https://github.com/<you>/koha-mcp-server.git
+cd koha-mcp-server
+```
