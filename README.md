@@ -43,9 +43,6 @@ nano config.json              # fill in your Koha credentials
 .venv/bin/python koha_mcp_server.py # start the MCP server (stdio)
 ```
 
-> ⚠️ **Never commit `config.json`** — it contains your API secret. It is already
-> excluded via `.gitignore`. Run `git status` before committing to be sure.
-
 ## 🗂 Tools exposed
 
 Search / catalogue, cataloguing, circulation, holds, patrons and libraries —
