@@ -157,4 +157,4 @@ In any client, run a minimal tool to confirm the connection:
   catalogue question.
 - n8n: click **Test connection** on the MCP Server Tool node.
 
-If tools do not appear, see [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
+If tools do not appear, see [docs/TROUBLESHOOTING.md](TROUBLESHOOTING.md).
