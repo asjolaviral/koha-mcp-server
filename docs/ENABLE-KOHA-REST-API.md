@@ -14,11 +14,9 @@
 3. **Check the REST system preferences** (staff client → Administration →
    System preferences, or directly in the DB):
    ```bash
-   sudo koha-mysql library -e "SELECT variable,value FROM systempreferences
-     WHERE variable LIKE '%REST%' OR variable LIKE '%OAuth%';"
+   sudo koha-mysql library -e "SELECT variable,value FROM systempreferences WHERE variable LIKE '%REST%' OR variable LIKE '%OAuth%';"
    ```
-   Required values: `RESTPublicAPI=1`, `RESTOAuth2ClientCredentials=1`.
-   Optional: `RESTBasicAuth=1`, `RESTPublicAnonymousRequests=1`.
+      Required values: `RESTPublicAPI=1`, `RESTOAuth2ClientCredentials=1`.Optional: `RESTBasicAuth=1`, `RESTPublicAnonymousRequests=1`.
 4. **Verify the endpoint** (may need `Accept: application/json`):
    ```bash
    curl -s -o /dev/null -w "%{http_code}\n" http://localhost/api/v1/
