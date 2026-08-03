@@ -9,7 +9,7 @@
 # Clone the repository
 
 ```bash
-git clone https://github.com/<you>/koha-mcp-server.git
+git clone https://github.com/asjolaviral/koha-mcp-server.git
 cd koha-mcp-server
 ```
 
