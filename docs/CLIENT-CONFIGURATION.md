@@ -121,7 +121,7 @@ curl http://localhost:8000/sse
 3. Configure:
    - **Transport**: `SSE` (or `Streamable HTTP`, if supported by your n8n)
    - **URL**: `http://localhost:8000/sse` (or the server's LAN address, e.g.
-     `http://192.168.29.214:8000/sse` if n8n runs on another host)
+     `http://192.168.xxx.xxx:8000/sse` if n8n runs on another host)
 4. Click **Test connection**. The 24 Koha tools are discovered automatically.
 5. Connect the node to your workflow. The **MCP Tool** node lets you select a
    specific Koha tool and pass its parameters from workflow fields.
