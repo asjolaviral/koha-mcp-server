@@ -25,7 +25,7 @@ and return items, and manage holds — using plain language.
 
 | Document | Contents |
 |----------|----------|
-| [INSTALLATION.md](docs/INSTALL-KOHA-MCP-SERVER.md) | Complete step-by-step setup guide (guidelines) |
+| [INSTALL-KOHA-MCP-SERVER.md](docs/INSTALL-KOHA-MCP-SERVER.md) | Complete step-by-step setup guide (guidelines) |
 | [CLIENT-CONFIGURATION.md](docs/CLIENT-CONFIGURATION.md) | Configure **opencode**, **Claude Desktop**, **n8n** |
 | [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Errors you may hit and their fixes |
 | [test_client.py](test_client.py) | Self-test script |
