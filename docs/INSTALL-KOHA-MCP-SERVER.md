@@ -36,7 +36,7 @@ nano config.json
   "client_secret": "YOUR-OAUTH2-CLIENT-SECRET",
   "instance": "library", // your library instance name
   "branchcode": "GVP", // your library code
-  "koha_user": "library-koha",
+  "koha_user": "library-koha", // automatically populated using setup.sh
   "return_helper": "/usr/local/lib/koha-mcp/scripts/koha_return.pl"
 }
 ```
