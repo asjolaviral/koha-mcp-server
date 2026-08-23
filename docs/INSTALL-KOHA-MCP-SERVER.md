@@ -31,12 +31,12 @@ nano config.json
 
 ```json
 {
-  "base_url": "http://192.168.xxx.xxx", // you server URL
+  "base_url": "http://192.168.xxx.xxx", # you server URL
   "client_id": "YOUR-OAUTH2-CLIENT-ID",
   "client_secret": "YOUR-OAUTH2-CLIENT-SECRET",
-  "instance": "library", // your library instance name
-  "branchcode": "GVP", // your library code
-  "koha_user": "library-koha", // automatically populated using setup.sh
+  "instance": "library", # your library instance name
+  "branchcode": "GVP", # your library code
+  "koha_user": "library-koha", # automatically populated using setup.sh
   "return_helper": "/usr/local/lib/koha-mcp/scripts/koha_return.pl"
 }
 ```
