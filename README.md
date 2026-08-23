@@ -52,7 +52,7 @@ nano config.json              # fill in your Koha credentials
 ## 🗂 Tools exposed
 
 Search / catalogue, cataloguing, circulation, holds, patrons and libraries —
-24 tools in total. See [INSTALLATION.md](docs/INSTALLATION.md#tools) for the full list.
+24 tools in total. See [INSTALLATION.md](docs/INSTALL-KOHA-MCP-SERVER.md#tools-exposed) for the full list.
 
 ## 🧩 How it works
 
