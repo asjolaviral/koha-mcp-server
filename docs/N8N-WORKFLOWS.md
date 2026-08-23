@@ -43,7 +43,7 @@ This guide shows how to connect the **Koha MCP Server** (running over SSE) to
 
    - n8n runs on the **same host** → use `http://localhost:8000/sse`
    - n8n runs on **another host** → use the server's LAN IP, e.g.
-     `http://192.168.29.214:8000/sse`
+     `http://192.168.xxx.xxx:8000/sse`
 
 4. Click **Test connection** (or let n8n fetch tools). You should see the 24
    Koha tools appear (e.g. `search_catalogue`, `checkout_item`, `return_item`).
