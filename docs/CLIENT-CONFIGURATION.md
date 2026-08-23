@@ -1,6 +1,6 @@
 # Configuring the Koha MCP Server with Clients
 
-Once the server is installed (see [INSTALL-KOHA-MCP-SERVER.md](docs/INSTALL-KOHA-MCP-SERVER.md)), connect
+Once the server is installed (see [INSTALL-KOHA-MCP-SERVER.md](INSTALL-KOHA-MCP-SERVER.md)), connect
 it to the MCP client of your choice.
 
 The server supports two transports:
