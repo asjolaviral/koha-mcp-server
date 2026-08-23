@@ -31,11 +31,11 @@ nano config.json
 
 ```json
 {
-  "base_url": "http://192.168.xxx.xxx",
+  "base_url": "http://192.168.xxx.xxx", // you server URL
   "client_id": "YOUR-OAUTH2-CLIENT-ID",
   "client_secret": "YOUR-OAUTH2-CLIENT-SECRET",
-  "instance": "library",
-  "branchcode": "GVP",
+  "instance": "library", // your library instance name
+  "branchcode": "GVP", // your library code
   "koha_user": "library-koha",
   "return_helper": "/usr/local/lib/koha-mcp/scripts/koha_return.pl"
 }
@@ -57,7 +57,7 @@ The server looks for the config in this order:
 3. `~/.koha-mcp/config.json`
 
 ```
-export KOHA_MCP_CONFIG=/home/viral/.koha-mcp/config.json
+export KOHA_MCP_CONFIG=/home/<user>/.koha-mcp/config.json
 ```
 
 **Install the return helper + sudo rule**
@@ -93,7 +93,7 @@ Expected output (values differ per instance): **Need to modify the patron**
 
 ```
 [OK]   list_libraries: ...
-[OK]   search_patrons(userid=viral): ...
+[OK]   search_patrons(userid=viral): ... // here viral is patron username
 [OK]   search_catalogue(title=advertising): ...
 [OK]   get_public_biblio(4): ...
 All self-tests passed.
