@@ -25,9 +25,9 @@ and return items, and manage holds — using plain language.
 
 | Document | Contents |
 |----------|----------|
-| [INSTALLATION.md](/docs/INSTALLATION.md) | Complete step-by-step setup guide (guidelines) |
-| [CLIENT-CONFIGURATION.md](/docs/CLIENT-CONFIGURATION.md) | Configure **opencode**, **Claude Desktop**, **n8n** |
-| [docs/TROUBLESHOOTING.md](/docs/TROUBLESHOOTING.md) | Errors you may hit and their fixes |
+| [INSTALLATION.md](docs/INSTALL-KOHA-MCP-SERVER.md) | Complete step-by-step setup guide (guidelines) |
+| [CLIENT-CONFIGURATION.md](docs/CLIENT-CONFIGURATION.md) | Configure **opencode**, **Claude Desktop**, **n8n** |
+| [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Errors you may hit and their fixes |
 | [test_client.py](test_client.py) | Self-test script |
 
 ## 🔧 Requirements
@@ -52,7 +52,7 @@ nano config.json              # fill in your Koha credentials
 ## 🗂 Tools exposed
 
 Search / catalogue, cataloguing, circulation, holds, patrons and libraries —
-24 tools in total. See [INSTALLATION.md](INSTALLATION.md#tools) for the full list.
+24 tools in total. See [INSTALLATION.md](docs/INSTALLATION.md#tools) for the full list.
 
 ## 🧩 How it works
 
